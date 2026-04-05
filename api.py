@@ -131,11 +131,15 @@ async def lifespan(app: FastAPI):
         chat_artifact = joblib.load(CHAT_MODEL_PATH)
         log.info("Chatbot model loaded — intents: %s", chat_artifact["intents"])
 
-        # Load sentence transformer (shared across all sessions)
-        model_name = chat_artifact.get("st_model_name", "all-MiniLM-L6-v2")
-        log.info("Loading sentence transformer: %s", model_name)
-        _st_model = SentenceTransformer(model_name)
-        log.info("Sentence transformer ready.")
+        # Load sentence transformer only when Groq is not available
+        # (Groq handles all chat when GROQ_API_KEY is set — no embeddings needed)
+        if _groq_client is None:
+            model_name = chat_artifact.get("st_model_name", "all-MiniLM-L6-v2")
+            log.info("Loading sentence transformer: %s", model_name)
+            _st_model = SentenceTransformer(model_name)
+            log.info("Sentence transformer ready.")
+        else:
+            log.info("Groq active — skipping SentenceTransformer load.")
     else:
         log.warning("Chatbot model not found at %s — run Section 3 notebook first", CHAT_MODEL_PATH)
 
