@@ -8,15 +8,14 @@ pandas>=2.2.0
 numpy>=1.26.0
 scikit-learn>=1.4.0
 joblib>=1.4.0
-matplotlib>=3.8.0
-seaborn>=0.13.0
 
 # ── NLP ───────────────────────────────────────────────────────────────────────
 nltk>=3.8.0
 spacy>=3.7.0
 dateparser>=1.2.0
-# sentence-transformers only needed for local FSM chat (skipped when GROQ_API_KEY is set)
-sentence-transformers>=3.0.0
+# sentence-transformers only needed for local FSM chat (not installed in production)
+# Uncomment below if running without GROQ_API_KEY:
+# sentence-transformers>=3.0.0
 
 # ── LLM (Groq) ───────────────────────────────────────────────────────────────
 groq>=0.9.0

@@ -36,7 +36,12 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from sentence_transformers import SentenceTransformer
+try:
+    from sentence_transformers import SentenceTransformer as _SentenceTransformer
+    _ST_AVAILABLE = True
+except ImportError:
+    _SentenceTransformer = None  # type: ignore
+    _ST_AVAILABLE = False
 
 try:
     from groq import Groq as _GroqClient
@@ -133,10 +138,10 @@ async def lifespan(app: FastAPI):
 
         # Load sentence transformer only when Groq is not available
         # (Groq handles all chat when GROQ_API_KEY is set — no embeddings needed)
-        if _groq_client is None:
+        if _groq_client is None and _ST_AVAILABLE:
             model_name = chat_artifact.get("st_model_name", "all-MiniLM-L6-v2")
             log.info("Loading sentence transformer: %s", model_name)
-            _st_model = SentenceTransformer(model_name)
+            _st_model = _SentenceTransformer(model_name)
             log.info("Sentence transformer ready.")
         else:
             log.info("Groq active — skipping SentenceTransformer load.")
