@@ -22,9 +22,11 @@
 ---
 
 ## 3. Customer Segmentation (K-Means, k=3)
-| Segment         |   Booking_Frequency |   Avg_Spending |   Sentiment_Score |   Days_Inactive |   Customer_Count |
-|:----------------|--------------------:|---------------:|------------------:|----------------:|-----------------:|
-| Casual Browsers |                 7.5 |         274.76 |              0.29 |           59.66 |            20000 |
+| Segment              |   Booking_Frequency |   Avg_Spending |   Sentiment_Score |   Days_Inactive |   Customer_Count |
+|:---------------------|--------------------:|---------------:|------------------:|----------------:|-----------------:|
+| At-Risk Customers    |                3.99 |         273.13 |              0.54 |           60.15 |             6005 |
+| Casual Browsers      |                7.54 |         276.18 |             -0.08 |           59    |             8065 |
+| High-Value Customers |               10.99 |         274.47 |              0.54 |           60.06 |             5930 |
 
 *Plots: `reports/customer_segments.png`, `reports/elbow_silhouette.png`*
 
