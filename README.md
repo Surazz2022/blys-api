@@ -273,15 +273,32 @@ Resets a chat session, clearing all conversation history.
 
 ## Deployment
 
-The project includes a `Dockerfile` and `render.yaml` for deployment on [Render](https://render.com).
+The API is live and deployed on Render:
 
-### Deploy to Render
+| Endpoint | URL |
+|----------|-----|
+| Interactive API Docs | https://blys-api-2.onrender.com/docs |
+| Health Check | https://blys-api-2.onrender.com/health |
+| Recommend | https://blys-api-2.onrender.com/recommend |
+| Chatbot | https://blys-api-2.onrender.com/chatbot |
+
+> Note: The free tier on Render spins down after 15 minutes of inactivity. The first request after a period of inactivity may take 30-60 seconds to respond while the server wakes up.
+
+---
+
+### Deploy to Render (steps)
+
+The project includes a `Dockerfile` and `render.yaml` for deployment on [Render](https://render.com).
 
 1. Push the repository to GitHub
 2. Go to [render.com](https://render.com) and create a new Web Service
-3. Connect your GitHub repository
-4. Add the `GROQ_API_KEY` environment variable in the Render dashboard
-5. Deploy — the live API will be available at your Render URL
+3. Connect your GitHub repository — Render detects `render.yaml` automatically
+4. Go to the **Environment** tab and add `GROQ_API_KEY` as an environment variable
+5. Click **Deploy** — the build takes around 5-8 minutes on first run
+
+Setting `GROQ_API_KEY` on Render is important for two reasons:
+- It enables the Groq LLM backend for accurate natural language understanding
+- It prevents the heavy local sentence transformer model from loading, keeping memory within the free tier 512MB limit
 
 ### Docker (local)
 
