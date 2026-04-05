@@ -1,0 +1,164 @@
+{"text": "Yes please", "intent": "confirmation_yes"}
+{"text": "This Saturday at 3:30pm", "intent": "provide_datetime"}
+{"text": "April 5th at noon", "intent": "provide_datetime"}
+{"text": "Give me the prices", "intent": "price_inquiry"}
+{"text": "Thanks", "intent": "goodbye"}
+{"text": "BK-2025-001", "intent": "provide_booking_id"}
+{"text": "Stop", "intent": "confirmation_no"}
+{"text": "Move my appointment to another day", "intent": "reschedule"}
+{"text": "Hi there", "intent": "greeting"}
+{"text": "Go ahead", "intent": "confirmation_yes"}
+{"text": "How much does a massage cost?", "intent": "price_inquiry"}
+{"text": "#BK001", "intent": "provide_booking_id"}
+{"text": "Talk later", "intent": "goodbye"}
+{"text": "I need to cancel", "intent": "cancel"}
+{"text": "The ID is BK-100", "intent": "provide_booking_id"}
+{"text": "BK-2024-123", "intent": "provide_booking_id"}
+{"text": "Can I reschedule my booking?", "intent": "reschedule"}
+{"text": "Cancel my session", "intent": "cancel"}
+{"text": "I want a body scrub appointment", "intent": "booking_create"}
+{"text": "Booking number 1234", "intent": "provide_booking_id"}
+{"text": "How much for a deep tissue massage?", "intent": "price_inquiry"}
+{"text": "Okay", "intent": "confirmation_yes"}
+{"text": "Hi", "intent": "greeting"}
+{"text": "Negative", "intent": "confirmation_no"}
+{"text": "Is it possible to change my booking date?", "intent": "reschedule"}
+{"text": "How do I cancel my booking?", "intent": "cancel"}
+{"text": "Indeed", "intent": "confirmation_yes"}
+{"text": "Friday afternoon", "intent": "provide_datetime"}
+{"text": "That's correct", "intent": "confirmation_yes"}
+{"text": "How are you?", "intent": "out_of_scope"}
+{"text": "Who won the game?", "intent": "out_of_scope"}
+{"text": "Goodbye", "intent": "goodbye"}
+{"text": "15 April 2pm", "intent": "provide_datetime"}
+{"text": "I need to move my booking to a different time", "intent": "reschedule"}
+{"text": "Tomorrow at 2pm", "intent": "provide_datetime"}
+{"text": "Set up an appointment for me", "intent": "booking_create"}
+{"text": "How much is a facial?", "intent": "price_inquiry"}
+{"text": "Yes, that's right", "intent": "confirmation_yes"}
+{"text": "Can you change my appointment time?", "intent": "reschedule"}
+{"text": "BK 007", "intent": "provide_booking_id"}
+{"text": "Book a hair spa session", "intent": "booking_create"}
+{"text": "How expensive is a facial?", "intent": "price_inquiry"}
+{"text": "Yep", "intent": "confirmation_yes"}
+{"text": "No not yet", "intent": "confirmation_no"}
+{"text": "Schedule a massage for me", "intent": "booking_create"}
+{"text": "Absolutely", "intent": "confirmation_yes"}
+{"text": "Morning session", "intent": "provide_datetime"}
+{"text": "Next Friday at 3pm", "intent": "provide_datetime"}
+{"text": "Yeah", "intent": "confirmation_yes"}
+{"text": "Please cancel my appointment", "intent": "cancel"}
+{"text": "Nope", "intent": "confirmation_no"}
+{"text": "Affirmative", "intent": "confirmation_yes"}
+{"text": "Hello", "intent": "greeting"}
+{"text": "Delete my booking", "intent": "cancel"}
+{"text": "Definitely", "intent": "confirmation_yes"}
+{"text": "2025-04-01 11:00", "intent": "provide_datetime"}
+{"text": "I need a different time slot", "intent": "reschedule"}
+{"text": "No that's wrong", "intent": "confirmation_no"}
+{"text": "Good morning", "intent": "greeting"}
+{"text": "Greetings", "intent": "greeting"}
+{"text": "What are the rates?", "intent": "price_inquiry"}
+{"text": "Yes", "intent": "confirmation_yes"}
+{"text": "Actually no", "intent": "confirmation_no"}
+{"text": "I don't want the booking anymore", "intent": "cancel"}
+{"text": "BK-001", "intent": "provide_booking_id"}
+{"text": "Alright", "intent": "confirmation_yes"}
+{"text": "Make a new booking please", "intent": "booking_create"}
+{"text": "Good evening", "intent": "greeting"}
+{"text": "Can you help me reschedule?", "intent": "reschedule"}
+{"text": "No thank you", "intent": "confirmation_no"}
+{"text": "Done", "intent": "goodbye"}
+{"text": "What are your service rates?", "intent": "price_inquiry"}
+{"text": "Are you a robot?", "intent": "out_of_scope"}
+{"text": "Hey", "intent": "greeting"}
+{"text": "March 30 at 10:00", "intent": "provide_datetime"}
+{"text": "Don't proceed", "intent": "confirmation_no"}
+{"text": "See you", "intent": "goodbye"}
+{"text": "Not now", "intent": "confirmation_no"}
+{"text": "What are your prices?", "intent": "price_inquiry"}
+{"text": "Tonight at 7", "intent": "provide_datetime"}
+{"text": "I would like to cancel my appointment", "intent": "cancel"}
+{"text": "My booking ID is BK-005", "intent": "provide_booking_id"}
+{"text": "How do I reschedule my session?", "intent": "reschedule"}
+{"text": "No", "intent": "confirmation_no"}
+{"text": "Tell me the pricing", "intent": "price_inquiry"}
+{"text": "Never mind", "intent": "confirmation_no"}
+{"text": "Thank you", "intent": "goodbye"}
+{"text": "Reference BK-999", "intent": "provide_booking_id"}
+{"text": "I would like to make a booking", "intent": "booking_create"}
+{"text": "Cancel my massage please", "intent": "cancel"}
+{"text": "What's up", "intent": "greeting"}
+{"text": "Please proceed", "intent": "confirmation_yes"}
+{"text": "This evening 6pm", "intent": "provide_datetime"}
+{"text": "What time is it?", "intent": "out_of_scope"}
+{"text": "Hello there", "intent": "greeting"}
+{"text": "It's BK-042", "intent": "provide_booking_id"}
+{"text": "30 Mar 2025 10am", "intent": "provide_datetime"}
+{"text": "Monday 9 in the morning", "intent": "provide_datetime"}
+{"text": "Wednesday at 10:30am", "intent": "provide_datetime"}
+{"text": "Wrong", "intent": "confirmation_no"}
+{"text": "I need to call off my session", "intent": "cancel"}
+{"text": "No thanks", "intent": "confirmation_no"}
+{"text": "Afternoon please", "intent": "provide_datetime"}
+{"text": "Cheers", "intent": "goodbye"}
+{"text": "No I don't", "intent": "confirmation_no"}
+{"text": "I want to cancel my facial", "intent": "cancel"}
+{"text": "Sounds good", "intent": "confirmation_yes"}
+{"text": "Book me a facial", "intent": "booking_create"}
+{"text": "Yes I do", "intent": "confirmation_yes"}
+{"text": "Yes go ahead", "intent": "confirmation_yes"}
+{"text": "10 am tomorrow", "intent": "provide_datetime"}
+{"text": "Price list please", "intent": "price_inquiry"}
+{"text": "What can you do?", "intent": "out_of_scope"}
+{"text": "Change my booking", "intent": "reschedule"}
+{"text": "Can I book an appointment?", "intent": "booking_create"}
+{"text": "I want to cancel my booking", "intent": "cancel"}
+{"text": "Correct", "intent": "confirmation_yes"}
+{"text": "I need an appointment for a facial", "intent": "booking_create"}
+{"text": "Forget it", "intent": "confirmation_no"}
+{"text": "I want to change the time of my appointment", "intent": "reschedule"}
+{"text": "Next Monday morning", "intent": "provide_datetime"}
+{"text": "What is the price of a wellness package?", "intent": "price_inquiry"}
+{"text": "Of course", "intent": "confirmation_yes"}
+{"text": "What is the fee for a massage?", "intent": "price_inquiry"}
+{"text": "Good afternoon", "intent": "greeting"}
+{"text": "I want to book a massage", "intent": "booking_create"}
+{"text": "Reschedule my facial please", "intent": "reschedule"}
+{"text": "That's not right", "intent": "confirmation_no"}
+{"text": "That's it", "intent": "goodbye"}
+{"text": "Tell me a joke", "intent": "out_of_scope"}
+{"text": "Cancel that", "intent": "confirmation_no"}
+{"text": "That's all", "intent": "goodbye"}
+{"text": "What does a body scrub cost?", "intent": "price_inquiry"}
+{"text": "Howdy", "intent": "greeting"}
+{"text": "Don't do it", "intent": "confirmation_no"}
+{"text": "Thank you so much", "intent": "goodbye"}
+{"text": "Cost of hair spa?", "intent": "price_inquiry"}
+{"text": "I want to reschedule my appointment", "intent": "reschedule"}
+{"text": "OK", "intent": "confirmation_yes"}
+{"text": "Sunday 5 o'clock", "intent": "provide_datetime"}
+{"text": "Can you book a massage for me?", "intent": "booking_create"}
+{"text": "Next week Tuesday 9am", "intent": "provide_datetime"}
+{"text": "What's the weather like?", "intent": "out_of_scope"}
+{"text": "I need to book a wellness package", "intent": "booking_create"}
+{"text": "Bye", "intent": "goodbye"}
+{"text": "Who made you?", "intent": "out_of_scope"}
+{"text": "My reference is BK-050", "intent": "provide_booking_id"}
+{"text": "Reserve a time slot for me", "intent": "booking_create"}
+{"text": "I want to make an appointment", "intent": "booking_create"}
+{"text": "Cancel booking BK-001", "intent": "cancel"}
+{"text": "Can I shift my booking?", "intent": "reschedule"}
+{"text": "I would like to reschedule please", "intent": "reschedule"}
+{"text": "The 15th at 4pm", "intent": "provide_datetime"}
+{"text": "All good now", "intent": "goodbye"}
+{"text": "Please cancel my reservation", "intent": "cancel"}
+{"text": "Hey there", "intent": "greeting"}
+{"text": "Call off my appointment", "intent": "cancel"}
+{"text": "How much does it cost?", "intent": "price_inquiry"}
+{"text": "Create a new booking", "intent": "booking_create"}
+{"text": "Sure", "intent": "confirmation_yes"}
+{"text": "Please do", "intent": "confirmation_yes"}
+{"text": "Need to reschedule my massage", "intent": "reschedule"}
+{"text": "Remove my booking", "intent": "cancel"}
+{"text": "What is the meaning of life?", "intent": "out_of_scope"}
