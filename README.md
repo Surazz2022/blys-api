@@ -277,10 +277,10 @@ The API is live and deployed on Render:
 
 | Endpoint | URL |
 |----------|-----|
-| Interactive API Docs | https://blys-api-2.onrender.com/docs |
-| Health Check | https://blys-api-2.onrender.com/health |
-| Recommend | https://blys-api-2.onrender.com/recommend |
-| Chatbot | https://blys-api-2.onrender.com/chatbot |
+| Interactive API Docs | https://blys-api-3.onrender.com/docs |
+| Health Check | https://blys-api-3.onrender.com/health |
+| Recommend | https://blys-api-3.onrender.com/recommend |
+| Chatbot | https://blys-api-3.onrender.com/chatbot |
 
 > Note: The free tier on Render spins down after 15 minutes of inactivity. The first request after a period of inactivity may take 30-60 seconds to respond while the server wakes up.
 
