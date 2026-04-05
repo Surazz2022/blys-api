@@ -67,7 +67,7 @@ chat_artifact: dict | None = None
 _customer_df:  pd.DataFrame | None = None   # per-customer aggregates derived from transactions
 _sia:          SentimentIntensityAnalyzer | None = None
 _ref_date:     pd.Timestamp | None = None   # max booking date — days-inactive anchor
-_st_model:     SentenceTransformer | None = None   # shared sentence encoder
+_st_model:     object | None = None   # shared sentence encoder (SentenceTransformer when loaded)
 _groq_client:  object | None = None          # Groq LLM client (None if key not set)
 
 
