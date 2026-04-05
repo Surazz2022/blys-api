@@ -204,7 +204,10 @@ When `GROQ_API_KEY` is set, the chatbot uses Llama 3.3 70B via Groq with real to
 }
 ```
 
-**Response:**
+**Response with Groq active (`chat_backend: groq_llm`):**
+
+The LLM understands the full message in one shot, calls the reschedule tool, and replies naturally.
+
 ```json
 {
   "session_id": "user-123",
@@ -213,7 +216,44 @@ When `GROQ_API_KEY` is set, the chatbot uses Llama 3.3 70B via Groq with real to
   "intent_confidence": 1.0,
   "current_state": "LLM",
   "turn_number": 1,
-  "conversation_history": [...]
+  "conversation_history": [
+    {
+      "turn": 1,
+      "user": "I want to reschedule BK-001 to Friday at 3pm",
+      "bot": "Your booking BK-001 has been rescheduled to Friday at 3:00 PM. Your therapist James is confirmed for the new time.",
+      "intent": "llm",
+      "conf": 1.0,
+      "state": "LLM"
+    }
+  ]
+}
+```
+
+**Response with fallback active (`chat_backend: local_fsm`):**
+
+The FSM extracts the booking ID and date separately, confirms before acting, and requires multiple turns.
+
+Turn 1 — user sends the same message:
+```json
+{
+  "session_id": "user-123",
+  "bot_response": "Got it. You want to reschedule BK-001 to Friday at 3:00 PM. Shall I go ahead?",
+  "intent": "reschedule",
+  "intent_confidence": 0.87,
+  "current_state": "RESCHEDULE_CONFIRM",
+  "turn_number": 1
+}
+```
+
+Turn 2 — user confirms:
+```json
+{
+  "session_id": "user-123",
+  "bot_response": "Done! Booking BK-001 has been rescheduled to Friday at 3:00 PM.",
+  "intent": "confirmation_yes",
+  "intent_confidence": 0.96,
+  "current_state": "DONE",
+  "turn_number": 2
 }
 ```
 
