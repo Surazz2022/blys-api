@@ -98,6 +98,16 @@ Get a free API key at [console.groq.com](https://console.groq.com). The free tie
 
 When deploying to Render, add `GROQ_API_KEY` as an environment variable in the Render dashboard under the Environment tab. The server will not load the heavy local models when Groq is active, which keeps memory usage within the free tier limit.
 
+**Fallback behaviour when Groq is not available:**
+
+If `GROQ_API_KEY` is not set, the chatbot automatically falls back to a local pipeline:
+- Intent is classified using a Logistic Regression model trained on sentence embeddings
+- A finite state machine (FSM) manages the conversation flow across 13 dialogue states
+- Entity extraction (booking ID, date/time, service name) is handled by spaCy and dateparser
+- Booking actions (reschedule, cancel, create) are still executed against the mock database
+
+The fallback works for straightforward requests but is less accurate with natural or ambiguous language compared to the Groq LLM backend. The `/health` endpoint shows `"chat_backend": "local_fsm"` when the fallback is active.
+
 ---
 
 ## Running the Notebooks
